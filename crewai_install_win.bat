@@ -30,10 +30,10 @@ call .venv\Scripts\activate.bat
 echo Upgrading pip...
 python -m pip install --upgrade pip
 
-@REM :: Set environment variables for PyO3
-@REM echo Setting PyO3 environment variables...
-@REM set PYO3_PYTHON=%cd%\.venv\Scripts\python.exe
-@REM set PYTHON_CONFIGURE_OPTS=--enable-shared
+:: Set environment variables for PyO3
+echo Setting PyO3 environment variables...
+set PYO3_PYTHON=%cd%\.venv\Scripts\python.exe
+set PYTHON_CONFIGURE_OPTS=--enable-shared
 
 :: Install CrewAI and tools
 echo Installing CrewAI and tools...
