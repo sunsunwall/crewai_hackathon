@@ -1,3 +1,14 @@
+# Resources
+
+- [CrewAI](https://docs.crewai.com/)
+- [CrewAI Tools](https://docs.crewai.com/tools/)
+- [CrewAI Agents](https://docs.crewai.com/agents/)
+
+## Intruductory courses
+
+- [deeplearning.ai - Practical Multi-AI Agents and Advanced Use Cases with CrewAI](https://www.deeplearning.ai/short-courses/practical-multi-ai-agents-and-advanced-use-cases-with-crewai/)
+- [deeplearning.ai - Multi-AI Agent Systems with CrewAI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
+
 # CrewAI Installation Guide
 
 This guide will help you install CrewAI on both macOS and Windows systems.
