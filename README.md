@@ -53,7 +53,7 @@ Open Command Prompt and run:
 python --version
 ```
 
-If Python is not installed or version is between 3.10 and 3.12:
+If Python is not installed or version is not between 3.10 and 3.12:
 1. Download Python 3.12 from [python.org](https://www.python.org/downloads/)
 2. During installation, make sure to check "Add Python to PATH"
 
