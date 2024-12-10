@@ -1,114 +1,105 @@
-# Resources
+# CrewAI Project Guide
 
-- [CrewAI](https://docs.crewai.com/)
-- [CrewAI Tools](https://docs.crewai.com/tools/)
-- [CrewAI Agents](https://docs.crewai.com/agents/)
+## Overview
+CrewAI is a framework for orchestrating role-playing AI agents. This guide provides resources and installation instructions for both macOS and Windows systems.
 
-## Intruductory courses
+## Learning Resources
 
+### Official Documentation
+- [CrewAI Documentation](https://docs.crewai.com/)
+- [CrewAI Tools Guide](https://docs.crewai.com/tools/)
+- [CrewAI Agents Guide](https://docs.crewai.com/agents/)
+
+### Learning Courses
 - [deeplearning.ai - Multi-AI Agent Systems with CrewAI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
 - [deeplearning.ai - Practical Multi-AI Agents and Advanced Use Cases with CrewAI](https://www.deeplearning.ai/short-courses/practical-multi-ai-agents-and-advanced-use-cases-with-crewai/)
 
-# CrewAI Installation Guide
-
-This guide will help you install CrewAI on both macOS and Windows systems.
-
-[official CrewAI documentation](https://docs.crewai.com/installation).
-
-
 ## Prerequisites
 
-- openai/anthropic api key
+- Python 3.10-3.12
+- OpenAI/Anthropic API key
+- Basic command line knowledge
 
-## macOS Installation
+## Installation Guide
 
-### 1. Check Python Version
+### macOS Installation
 
-First, verify your Python version:
+1. **Check Python Version**
+   ```bash
+   python3 --version
+   ```
+   If needed, install Python using Homebrew:
+   ```bash
+   brew install python@3.12
+   ```
 
-```bash
-python3 --version
-```
+2. **Project Setup**
+   ```bash
+   # Create and enter project directory
+   mkdir my_crewai_project
+   cd my_crewai_project
 
-If you don't have Python 3.10-3.12 installed, you can install it using Homebrew:
+   # Create and activate virtual environment
+   python3.12 -m venv venv
+   source venv/bin/activate
+   ```
 
-```bash
-brew install python@3.12
-```
+3. **Install CrewAI**
+   ```bash
+   pip install 'crewai[tools]'
+   ```
 
-### 2. Set Up Virtual Environment (Recommended)
+4. **Create Project**
+   ```bash
+   crewai create crew <project_name>
+   ```
 
-```bash
-# Create a new directory for your project
-mkdir my_crewai_project
-cd my_crewai_project
+5. **Run Project**
+   ```bash
+   crewai run
+   ```
 
-# Create a virtual environment
-python3.12 -m venv venv
+### Windows Installation
 
-# Activate the virtual environment
-source venv/bin/activate
-```
+1. **Check Python Version**
+   ```bash
+   python --version
+   ```
+   If needed, download Python 3.12 from [python.org](https://www.python.org/downloads/)
+   > ⚠️ Important: Check "Add Python to PATH" during installation
 
-### 3. Install CrewAI
+2. **Project Setup**
+   ```bash
+   # Create and enter project directory
+   mkdir my_crewai_project
+   cd my_crewai_project
 
-```bash
-pip install 'crewai[tools]'
-```
+   # Create and activate virtual environment
+   python -m venv venv
+   venv\Scripts\activate
+   ```
 
-### 4. Create a new crewai project
-```bash
-crewai create crew <project_name>
-```
+3. **Install CrewAI**
+   ```bash
+   pip install 'crewai[tools]'
+   ```
 
-### 5. Run the crew
-```bash
-crewai run
-```
+4. **Create Project**
+   ```bash
+   crewai create crew <project_name>
+   ```
 
-## Windows Installation
+5. **Run Project**
+   ```bash
+   crewai run
+   ```
 
-### 1. Check Python Version
+## Tips for Success
+1. Always use a virtual environment to avoid package conflicts
+2. Keep your API keys secure and never commit them to version control
+3. Check the [official documentation](https://docs.crewai.com/installation) for troubleshooting and updates
 
-Open Command Prompt and run:
 
-```bash
-python --version
-```
-
-If Python is not installed or version is not between 3.10 and 3.12:
-1. Download Python 3.12 from [python.org](https://www.python.org/downloads/)
-2. During installation, make sure to check "Add Python to PATH"
-
-### 2. Set Up Virtual Environment (Recommended)
-
-```bash
-# Create a new directory for your project
-mkdir my_crewai_project
-cd my_crewai_project
-
-# Create a virtual environment
-python -m venv venv
-
-# Activate the virtual environment
-venv\Scripts\activate
-```
-
-### 3. Install CrewAI
-
-```bash
-pip install 'crewai[tools]'
-```
-
-### 4. Create a new crewai project
-```bash
-crewai create crew <project_name>
-```
-
-### 5. Run the crew
-```bash
-crewai run
-```
 
 
 
