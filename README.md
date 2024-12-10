@@ -18,7 +18,6 @@ CrewAI is a framework for orchestrating role-playing AI agents. This guide provi
 
 - Python 3.10-3.12
 - OpenAI/Anthropic API key
-- Basic command line knowledge
 
 ## Installation Guide
 
