@@ -16,7 +16,7 @@ First, verify your Python version:
 python3 --version
 ```
 
-If you don't have Python 3.10+ installed, you can install it using Homebrew:
+If you don't have Python 3.10-3.12 installed, you can install it using Homebrew:
 
 ```bash
 brew install python@3.12
@@ -53,7 +53,7 @@ Open Command Prompt and run:
 python --version
 ```
 
-If Python is not installed or version is below 3.10:
+If Python is not installed or version is between 3.10 and 3.12:
 1. Download Python 3.12 from [python.org](https://www.python.org/downloads/)
 2. During installation, make sure to check "Add Python to PATH"
 
