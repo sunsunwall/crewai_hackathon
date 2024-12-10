@@ -50,7 +50,7 @@ pip install 'crewai[tools]'
 crewai create crew <project_name>
 ```
 
-## 5. Run the crew
+### 5. Run the crew
 ```bash
 crewai run
 ```
@@ -94,7 +94,7 @@ pip install 'crewai[tools]'
 crewai create crew <project_name>
 ```
 
-## 5. Run the crew
+### 5. Run the crew
 ```bash
 crewai run
 ```
