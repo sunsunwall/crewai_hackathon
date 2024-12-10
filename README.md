@@ -30,7 +30,7 @@ mkdir my_crewai_project
 cd my_crewai_project
 
 # Create a virtual environment
-python3 -m venv venv
+python3.12 -m venv venv
 
 # Activate the virtual environment
 source venv/bin/activate
@@ -76,5 +76,6 @@ venv\Scripts\activate
 ```bash
 pip install 'crewai[tools]'
 ```
+
 
 
