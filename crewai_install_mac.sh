@@ -38,6 +38,15 @@ echo "Setting PyO3 environment variables..."
 export PYO3_PYTHON=$(which python)
 export PYTHON_CONFIGURE_OPTS="--enable-shared"
 
+# Check if running on Apple Silicon
+if [[ $(uname -m) == 'arm64' ]]; then
+    echo "Installing onnxruntime for Apple Silicon..."
+    pip install onnxruntime-silicon
+else
+    echo "Installing onnxruntime for Intel Mac..."
+    pip install onnxruntime
+fi
+
 # Install CrewAI and tools
 echo "Installing CrewAI and tools..."
 pip install 'crewai[tools]'
