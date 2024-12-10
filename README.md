@@ -2,6 +2,9 @@
 
 This guide will help you install CrewAI on both macOS and Windows systems.
 
+[official CrewAI documentation](https://docs.crewai.com/installation).
+
+
 ## Prerequisites
 
 - openai/anthropic api key
@@ -42,6 +45,15 @@ source venv/bin/activate
 pip install 'crewai[tools]'
 ```
 
+### 4. Create a new crewai project
+```bash
+crewai create crew <project_name>
+```
+
+## 5. Run the crew
+```bash
+crewai run
+```
 
 ## Windows Installation
 
@@ -75,6 +87,16 @@ venv\Scripts\activate
 
 ```bash
 pip install 'crewai[tools]'
+```
+
+### 4. Create a new crewai project
+```bash
+crewai create crew <project_name>
+```
+
+## 5. Run the crew
+```bash
+crewai run
 ```
 
 
