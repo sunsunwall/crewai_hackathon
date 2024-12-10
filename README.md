@@ -6,8 +6,8 @@
 
 ## Intruductory courses
 
-- [deeplearning.ai - Practical Multi-AI Agents and Advanced Use Cases with CrewAI](https://www.deeplearning.ai/short-courses/practical-multi-ai-agents-and-advanced-use-cases-with-crewai/)
 - [deeplearning.ai - Multi-AI Agent Systems with CrewAI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
+- [deeplearning.ai - Practical Multi-AI Agents and Advanced Use Cases with CrewAI](https://www.deeplearning.ai/short-courses/practical-multi-ai-agents-and-advanced-use-cases-with-crewai/)
 
 # CrewAI Installation Guide
 
