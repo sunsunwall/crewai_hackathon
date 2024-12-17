@@ -67,7 +67,12 @@ CrewAI is a framework for orchestrating role-playing AI agents. This guide provi
    If needed, download Python 3.12 from [python.org](https://www.python.org/downloads/)
    > ⚠️ Important: Check "Add Python to PATH" during installation
 
-2. **Project Setup**
+2. **Install Microsoft Buildtools**
+
+   Microsoft Buildtools is required for certain packages in CrewAI to run.
+   Follow this [guide](https://github.com/bycloudai/InstallVSBuildToolsWindows?tab=readme-ov-file) to install.
+
+3. **Project Setup**
    ```bash
    # Create and enter project directory
    mkdir my_crewai_project
@@ -78,7 +83,7 @@ CrewAI is a framework for orchestrating role-playing AI agents. This guide provi
    venv\Scripts\activate
    ```
 
-3. **Install CrewAI**
+4. **Install CrewAI**
    ```bash
    pip install 'crewai[tools]'
    ```
@@ -88,10 +93,16 @@ CrewAI is a framework for orchestrating role-playing AI agents. This guide provi
    crewai create crew <project_name>
    ```
 
-5. **Run Project**
+6. **Run Project**
    ```bash
    crewai run
    ```
+
+   **READY TO ROCK!**
+
+   Try setting up your first crew with Crewai's quickstart [guide](https://docs.crewai.com/quickstart)
+   HIGHLY recommended to do the two Deeplearning.ai courses mentioned earlier in this guide!
+   Now have some fun!
 
 ## Tips for Success
 1. Always use a virtual environment to avoid package conflicts
