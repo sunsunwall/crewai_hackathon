@@ -101,6 +101,7 @@ CrewAI is a framework for orchestrating role-playing AI agents. This guide provi
 ### READY TO ROCK!
 
 Try setting up your first crew with Crewai's quickstart [guide](https://docs.crewai.com/quickstart)
+
 HIGHLY recommended to do the two Deeplearning.ai courses mentioned earlier in this guide!
 Now have some fun!
 
