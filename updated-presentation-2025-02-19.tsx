@@ -14,10 +14,10 @@ const Presentation = () => {
             <Cpu size={96} className="relative text-white transform hover:scale-110 transition-transform duration-200" />
           </div>
           <p className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Skapa din egen AI-studieteam!
+            Skapa ditt eget AI-studieteam!
           </p>
           <div className="text-lg text-gray-600 text-center">
-            Med era CrewAI-experter:<br/>
+            Hackaton-crew:<br/>
             <span className="font-semibold">Lotta • Christian • Rafael • Sunny</span>
           </div>
           <Sparkles className="text-yellow-400 animate-pulse" size={32} />
@@ -44,6 +44,53 @@ const Presentation = () => {
               ))}
             </ul>
           </div>
+        </div>
+      )
+    },
+    {
+      title: "Vad är en AI-agent? 🤖",
+      content: (
+        <div className="space-y-8">
+          <p className="text-2xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            En AI-agent är ett program som:
+          </p>
+          <div className="grid grid-cols-2 gap-6">
+            {[
+              ["🎯", "Har ett specifikt syfte och mål", "bg-blue-100"],
+              ["🧠", "Kan fatta egna beslut", "bg-purple-100"],
+              ["🔄", "Interagerar med sin omgivning", "bg-green-100"],
+              ["📝", "Följer givna instruktioner", "bg-yellow-100"]
+            ].map(([emoji, text, bgColor], index) => (
+              <div key={index} className={`${bgColor} p-6 rounded-xl shadow-md transform hover:scale-105 transition-transform duration-200`}>
+                <div className="text-4xl mb-2">{emoji}</div>
+                <p className="text-lg">{text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Vad är INTE en AI-agent? 🚫",
+      content: (
+        <div className="space-y-8">
+          <div className="grid grid-cols-1 gap-4">
+            {[
+              ["❌", "En magisk lösning som fixar allt", "bg-red-50"],
+              ["❌", "Ett fullständigt autonomt system", "bg-orange-50"],
+              ["❌", "En ersättning för mänskligt tänkande", "bg-yellow-50"],
+              ["❌", "Ett system som kan allt", "bg-pink-50"]
+            ].map(([emoji, text, bgColor], index) => (
+              <div key={index} 
+                   className={`${bgColor} p-4 rounded-xl shadow-md transform hover:translate-x-2 transition-all duration-200 flex items-center space-x-4`}>
+                <span className="text-2xl">{emoji}</span>
+                <span className="text-lg font-medium">{text}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-gray-600 italic mt-4">
+            AI-agenter är verktyg som hjälper oss - inte ersätter oss!
+          </p>
         </div>
       )
     },
