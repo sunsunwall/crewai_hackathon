@@ -185,30 +185,113 @@ const Presentation = () => {
       )
     },
     {
-      title: "Gruppindelning 👥",
+      title: "Grupp 1 👥",
       content: (
-        <div className="space-y-6">
+        <div className="flex flex-col items-center justify-center space-y-8">
           <p className="text-xl text-center text-gray-600 mb-4">Första uppgift: Spåna fram ett coolt gruppnamn! 🎨</p>
-          <div className="grid grid-cols-2 gap-4 max-h-96 overflow-y-auto">
-            {[
-              ["Grupp 1", ["Max Ekberg", "Astrid Rodin", "Jonathan Boetsch", "Asmaa Abdirizak"]],
-              ["Grupp 2", ["Isak Forsberg", "Lucas Lindgren", "Viktoria Wisenfelt", "Arezo Hazara jafari"]],
-              ["Grupp 3", ["Bagher Hassani", "Zainab Adnan", "David Rydman", "Alexander Suleymanov"]],
-              ["Grupp 4", ["Ludvig Haglund", "Arvid Johansson", "Belle Sangthong", "Lukas Bråkenhielm"]],
-              ["Grupp 5", ["Mikael Anttila-Eriksson", "John Kinell", "Joel Söderberg", "Ellen Grefberg"]],
-              ["Grupp 6", ["Jonas Johnsson", "Diana Molinsky", "Johan Enstam", "Carl Daag"]],
-              ["Grupp 7", ["Olof Olsson", "Pontus Grähs", "Olivia Reponen", "David Izquierdo Puentes", "Sofia Wiktorsson"]]
-            ].map(([groupName, members], index) => (
-              <div key={index} 
-                   className="bg-white p-4 rounded-xl shadow-md transform hover:scale-105 transition-all duration-200 border-2 border-transparent hover:border-blue-300">
-                <h3 className="font-bold text-lg text-blue-600 mb-2">{groupName}</h3>
-                <ul className="space-y-1">
-                  {members.map((member, idx) => (
-                    <li key={idx} className="text-gray-700">{member}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-200 border-2 border-transparent hover:border-blue-300 w-full max-w-md">
+            <h3 className="font-bold text-2xl text-blue-600 mb-6 text-center">Grupp 1</h3>
+            <ul className="space-y-3">
+              {["Max Ekberg", "Astrid Rodin", "Jonathan Boetsch", "Asmaa Abdirizak"].map((member, idx) => (
+                <li key={idx} className="text-lg text-gray-700 text-center">{member}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Grupp 2 👥",
+      content: (
+        <div className="flex flex-col items-center justify-center space-y-8">
+          <p className="text-xl text-center text-gray-600 mb-4">Första uppgift: Spåna fram ett coolt gruppnamn! 🎨</p>
+          <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-200 border-2 border-transparent hover:border-blue-300 w-full max-w-md">
+            <h3 className="font-bold text-2xl text-blue-600 mb-6 text-center">Grupp 2</h3>
+            <ul className="space-y-3">
+              {["Isak Forsberg", "Lucas Lindgren", "Viktoria Wisenfelt", "Arezo Hazara jafari"].map((member, idx) => (
+                <li key={idx} className="text-lg text-gray-700 text-center">{member}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Grupp 3 👥",
+      content: (
+        <div className="flex flex-col items-center justify-center space-y-8">
+          <p className="text-xl text-center text-gray-600 mb-4">Första uppgift: Spåna fram ett coolt gruppnamn! 🎨</p>
+          <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-200 border-2 border-transparent hover:border-blue-300 w-full max-w-md">
+            <h3 className="font-bold text-2xl text-blue-600 mb-6 text-center">Grupp 3</h3>
+            <ul className="space-y-3">
+              {["Bagher Hassani", "Zainab Adnan", "David Rydman", "Alexander Suleymanov"].map((member, idx) => (
+                <li key={idx} className="text-lg text-gray-700 text-center">{member}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Grupp 4 👥",
+      content: (
+        <div className="flex flex-col items-center justify-center space-y-8">
+          <p className="text-xl text-center text-gray-600 mb-4">Första uppgift: Spåna fram ett coolt gruppnamn! 🎨</p>
+          <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-200 border-2 border-transparent hover:border-blue-300 w-full max-w-md">
+            <h3 className="font-bold text-2xl text-blue-600 mb-6 text-center">Grupp 4</h3>
+            <ul className="space-y-3">
+              {["Ludvig Haglund", "Arvid Johansson", "Belle Sangthong", "Lukas Bråkenhielm"].map((member, idx) => (
+                <li key={idx} className="text-lg text-gray-700 text-center">{member}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Grupp 5 👥",
+      content: (
+        <div className="flex flex-col items-center justify-center space-y-8">
+          <p className="text-xl text-center text-gray-600 mb-4">Första uppgift: Spåna fram ett coolt gruppnamn! 🎨</p>
+          <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-200 border-2 border-transparent hover:border-blue-300 w-full max-w-md">
+            <h3 className="font-bold text-2xl text-blue-600 mb-6 text-center">Grupp 5</h3>
+            <ul className="space-y-3">
+              {["Mikael Anttila-Eriksson", "John Kinell", "Joel Söderberg", "Ellen Grefberg"].map((member, idx) => (
+                <li key={idx} className="text-lg text-gray-700 text-center">{member}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Grupp 6 👥",
+      content: (
+        <div className="flex flex-col items-center justify-center space-y-8">
+          <p className="text-xl text-center text-gray-600 mb-4">Första uppgift: Spåna fram ett coolt gruppnamn! 🎨</p>
+          <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-200 border-2 border-transparent hover:border-blue-300 w-full max-w-md">
+            <h3 className="font-bold text-2xl text-blue-600 mb-6 text-center">Grupp 6</h3>
+            <ul className="space-y-3">
+              {["Jonas Johnsson", "Diana Molinsky", "Johan Enstam", "Carl Daag"].map((member, idx) => (
+                <li key={idx} className="text-lg text-gray-700 text-center">{member}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Grupp 7 👥",
+      content: (
+        <div className="flex flex-col items-center justify-center space-y-8">
+          <p className="text-xl text-center text-gray-600 mb-4">Första uppgift: Spåna fram ett coolt gruppnamn! 🎨</p>
+          <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-200 border-2 border-transparent hover:border-blue-300 w-full max-w-md">
+            <h3 className="font-bold text-2xl text-blue-600 mb-6 text-center">Grupp 7</h3>
+            <ul className="space-y-3">
+              {["Olof Olsson", "Pontus Grähs", "Olivia Reponen", "David Izquierdo Puentes", "Sofia Wiktorsson"].map((member, idx) => (
+                <li key={idx} className="text-lg text-gray-700 text-center">{member}</li>
+              ))}
+            </ul>
           </div>
         </div>
       )
